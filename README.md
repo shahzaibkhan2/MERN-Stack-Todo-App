@@ -14,7 +14,7 @@ This is the Full Stack (MERN) Todo App. Redux Toolkit is used as an advanced sta
 # Tools / Frameworks
 1. React.js
 2. Redux Toolkit
-3. NOde.js
+3. Node.js
 4. Express.js
 5. MongoDB
 6. Tailwind CSS
