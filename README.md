@@ -1,17 +1,22 @@
-# Full Stack Spotify Clone Website (MERN Stack)
+# Full Stack (MERN) Todo App
 
 
-I Built a Full Stack (MERN) Spotify Clone Website which is functional, responsive and secured using JavaScript, HTML, Tailwind CSS, Git and
-Github, Context Api, ECMAScript, ExpressJs, NodeJs, Mongoose, MongoDB and ReactJs. This is a full stack (MERN Stack) Spotify website through which you can explore your favorite songs according to your will and can add your favorite songs to your playlist or create your own playlist.
-This website also includes a separate Admin Panel through which you can keep track of your songs and albums in the website to properly add, change or remove the songs and albums. This Panel is only for the owner of the website. All the data used in this website is fully dynamic and is stored in the MongoDB database (Atlas). The returned data is then stored in a Context Api which is an advanced state management Hook in React. Have a look at this amazing website and don't forget to give it a star.
+This is the Full Stack (MERN) Todo App. Redux Toolkit is used as an advanced state management tool for states and maintaining states persistency.
+
+1. You can run this project locally using any hosting platform like Vercel, Netlify and GoDaddy etc. This project is completely protected using environment variables standards. So, you cannot directly host this app as specific keys and database urls have been hidden using environment protocols. But you can fork this repository and clone it into your laptop or pc and fill the environment variables and run it locally on your machine to experience the full potential of this amazing full stack mern todo app.
+2. The code is completely efficient and meets the ECMA Script and DSA standards.
+3. Host the frontend on hosting platforms like Vercel, Netlify or Godaddy to experience the UI.
+4. You can also host your backend data on server as well as on serverless platforms like Vercel and Netlify etc.
 
 # Landing Page
-![HOME PAGE](frontend/src/assets/spotify-1.jpg)
-# Login and Registeration
-![HOME PAGE](frontend/src/assets/spotify-6.jpg)
-# Footer
-![FOOTER](frontend/src/assets/spotify-2.jpg)
-# Album Page
-![ALBUM](frontend/src/assets/spotify-3.jpg)
-# BeatFlow Admin Panel
-![ADMIN](admin/src/assets/spotify-4.jpg)
+![HOME PAGE](frontend/public/todoApp.jpg)
+
+# Tools / Frameworks
+1. React.js
+2. Redux Toolkit
+3. NOde.js
+4. Express.js
+5. MongoDB
+6. Tailwind CSS
+7. React-Icons
+8. Sonner-Toaster
