@@ -10,7 +10,6 @@ export const TodosContext = createContext(null);
 const TodosContextProvider = ({ children }) => {
   // <--------------- Redux ------------------>
   const dispatch = useDispatch();
-  const { todos } = useSelector((state) => state.todo);
 
   // <---------------- States ------------------>
   const [isLoading, setIsLoading] = useState(false);

@@ -1,6 +1,5 @@
 import express, { urlencoded } from "express";
 import cors from "cors";
-import cookieParser from "cookie-parser";
 
 const app = express();
 
@@ -13,7 +12,6 @@ const corsOptions = {
 app.use(express.json());
 app.use(urlencoded({ extended: true }));
 app.use(cors(corsOptions));
-app.use(cookieParser());
 
 // Routes Imports
 import todoRouter from "./routes/todos.routes.js";
