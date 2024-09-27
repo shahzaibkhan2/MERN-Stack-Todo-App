@@ -1,5 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 
+// Todo Schema
 const todoSchema = new Schema(
   {
     text: {

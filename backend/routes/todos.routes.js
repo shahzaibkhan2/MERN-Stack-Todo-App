@@ -8,6 +8,7 @@ import {
 
 const router = Router();
 
+// Todo Api Routes
 router.route("/add-todo").post(addTodo);
 router.route("/get-all-todos").get(getAllTodos);
 router.route("/toggle-todo/:todoId").get(toggleTodosCompleted);

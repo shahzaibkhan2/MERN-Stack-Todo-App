@@ -1,3 +1,4 @@
+// Protected Environment Variables
 export const apiUri = {
   baseUri: import.meta.env.VITE_BASE_URI,
   todoUri: import.meta.env.VITE_TODO_URI,

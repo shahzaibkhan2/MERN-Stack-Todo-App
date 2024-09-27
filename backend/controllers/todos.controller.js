@@ -3,6 +3,7 @@ import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/apiResponse.js";
 import { asyncHandler } from "../utils/asyncHandler.js";
 
+// Add a Todo
 const addTodo = asyncHandler(async (req, res) => {
   const { text, dueDate } = req.body;
   if (!text) {
@@ -26,6 +27,8 @@ const addTodo = asyncHandler(async (req, res) => {
     .status(200)
     .json(new ApiResponse(201, {}, "Todo added successfully !"));
 });
+
+// Get All Todos
 const getAllTodos = asyncHandler(async (_, res) => {
   const todos = await Todo.find({}).sort({ dueDate: -1 });
 
@@ -40,6 +43,7 @@ const getAllTodos = asyncHandler(async (_, res) => {
     .json(new ApiResponse(201, todos, "Todos fetched successfully !"));
 });
 
+// Mark Todos as Completed or Pending
 const toggleTodosCompleted = asyncHandler(async (req, res) => {
   const { todoId } = req.params;
   const todo = await Todo.findById(todoId);
@@ -74,6 +78,7 @@ const toggleTodosCompleted = asyncHandler(async (req, res) => {
     .json(new ApiResponse(201, todos, "Todos fetched successfully !"));
 });
 
+// Delete a Todo
 const deleteTodo = asyncHandler(async (req, res) => {
   const { todoId } = req.params;
   const todo = await Todo.findByIdAndDelete(todoId);
@@ -89,4 +94,5 @@ const deleteTodo = asyncHandler(async (req, res) => {
     .json(new ApiResponse(201, todo, "Todo deleted successfully !"));
 });
 
+// Controllers Exports
 export { addTodo, getAllTodos, toggleTodosCompleted, deleteTodo };

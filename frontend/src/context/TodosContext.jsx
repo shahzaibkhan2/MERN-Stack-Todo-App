@@ -8,10 +8,11 @@ import { setDeleteTodo, setTodos } from "../store/features/todoSlice";
 export const TodosContext = createContext(null);
 
 const TodosContextProvider = ({ children }) => {
+  // <--------------- Redux ------------------>
   const dispatch = useDispatch();
   const { todos } = useSelector((state) => state.todo);
-  // <---------------- States ------------------>
 
+  // <---------------- States ------------------>
   const [isLoading, setIsLoading] = useState(false);
 
   // <---------------- useRefs ------------------>
@@ -93,7 +94,7 @@ const TodosContextProvider = ({ children }) => {
     }
   };
 
-  // Toggle Todos (Mark Completed or Pending)
+  // Delete a Todo
   const deleteTodo = async (todoId) => {
     try {
       const response = await axios.delete(
@@ -128,6 +129,8 @@ const TodosContextProvider = ({ children }) => {
     deleteTodo,
     isLoading,
   };
+
+  // <----------------- Context Provider Wrapper ---------------->
   return (
     <TodosContext.Provider value={postContextValues}>
       {children}

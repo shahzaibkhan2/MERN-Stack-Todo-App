@@ -6,6 +6,7 @@ import TodosFeed from "./components/todos/TodosFeed";
 import MiniHeader from "./components/headers/MiniHeader";
 import FiltersNav from "./components/filters/FiltersNav";
 
+// Main App
 const App = () => {
   return (
     <TodosContextProvider>

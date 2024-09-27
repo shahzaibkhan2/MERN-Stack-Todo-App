@@ -9,6 +9,7 @@ const corsOptions = {
   credentials: true,
 };
 
+// App Middlewares
 app.use(express.json());
 app.use(urlencoded({ extended: true }));
 app.use(cors(corsOptions));
