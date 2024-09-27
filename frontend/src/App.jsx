@@ -10,7 +10,7 @@ const App = () => {
   return (
     <TodosContextProvider>
       <Toaster />
-      <main className="w-full px-2 smallOne:w-2/3 smallOne:mx-auto my-10">
+      <main className="w-full px-2 smallOne:w-2/3 smallOne:mx-auto my-12">
         <Header />
         <TodoForm />
         <FiltersNav />
